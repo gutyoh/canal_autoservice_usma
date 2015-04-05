@@ -1,0 +1,5 @@
+C:\Users\Hermann\Desktop\canal_autoservice_usma\logica\bin\logica.dll.config
+C:\Users\Hermann\Desktop\canal_autoservice_usma\logica\bin\logica.dll
+C:\Users\Hermann\Desktop\canal_autoservice_usma\logica\bin\logica.pdb
+C:\Users\Hermann\Desktop\canal_autoservice_usma\logica\obj\Debug\logica.dll
+C:\Users\Hermann\Desktop\canal_autoservice_usma\logica\obj\Debug\logica.pdb
