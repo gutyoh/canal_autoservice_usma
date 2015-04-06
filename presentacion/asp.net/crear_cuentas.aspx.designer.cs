@@ -58,13 +58,13 @@ namespace presentacion.asp.net {
         protected global::System.Web.UI.WebControls.SqlDataSource dsDropDownListCuenta;
         
         /// <summary>
-        /// seleccion_cuenta1 control.
+        /// DropDownList2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect seleccion_cuenta1;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList2;
         
         /// <summary>
         /// button5 control.
