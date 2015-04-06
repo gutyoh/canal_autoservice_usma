@@ -9,17 +9,14 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using acceso_datos;
+
 
 namespace presentacion.asp.net
 {
     public partial class crear_cuentas : System.Web.UI.Page
     {
 
-        private string User;
-        private string pass;
-        private string result;
-        private string tipo;
+        private string mensaje;
         private string nombre;
         private string cedula;
         private string id_cliente;
@@ -40,40 +37,36 @@ namespace presentacion.asp.net
 
         protected void button5_Click(object sender, EventArgs e)
         {
-            if (seleccion_cuenta1.Value.ToString() == "Ahorro")
-            {
-                SqlConnection con = new SqlConnection("server=GUTY;" +
+               SqlConnection con = new SqlConnection("server=GUTY;" +
                                "Trusted_Connection=yes;" +
                                  "database=BANCODB; " +
                                  "connection timeout=30");
 
-
-                SqlCommand cmd = new SqlCommand("PA_CREAR_CUENTA_AHORRO", con);
+                SqlCommand cmd = new SqlCommand("PA_CREAR_CUENTA", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-
-                cmd.Parameters.Add("@result", SqlDbType.Int).Direction = ParameterDirection.Output;
-                cmd.Parameters.Add("@tipo", SqlDbType.Int).Direction = ParameterDirection.Output;
-                cmd.Parameters.Add("@nombre", SqlDbType.VarChar, 40).Direction = ParameterDirection.Output;
-                cmd.Parameters.Add("@cedula", SqlDbType.VarChar, 20).Direction = ParameterDirection.Output;
-                cmd.Parameters.Add("@id_cliente", SqlDbType.Int).Direction = ParameterDirection.Output;
-
-
+                cmd.Parameters.Add("@cuenta", SqlDbType.Int).Value = DropDownList1.SelectedValue;
+                cmd.Parameters.Add("@tipo", SqlDbType.Int).Value = DropDownList2.SelectedValue;
+                cmd.Parameters.Add("@mensaje", SqlDbType.VarChar, 50).Direction = ParameterDirection.Output;
+               
                 try
                 {
                     con.Open();
-                    cmd.ExecuteScalar();
-                    result = cmd.Parameters["@result"].Value.ToString();
-                    tipo = cmd.Parameters["@tipo"].Value.ToString();
-                    nombre = cmd.Parameters["@nombre"].Value.ToString();
-                    cedula = cmd.Parameters["@cedula"].Value.ToString();
-                    id_cliente = cmd.Parameters["@id_cliente"].Value.ToString();
-
-                }
+                    cmd.ExecuteScalar();                    
+                    mensaje = cmd.Parameters["@mensaje"].Value.ToString();
+                    con.Close();
+                 }
                 catch (Exception ex)
                 {
 
                 }
-            }
+                if (mensaje == "")
+                {
+
+                }
+                else
+                {
+                    
+                }
         }
     }
 }

@@ -47,11 +47,10 @@
             <div class="linea2" id="tipo_cuenta1">
                 Seleccione el tipo de cuenta <br/><br/>
 
-                <select runat="server" id="seleccion_cuenta1">
-                    <option disabled selected>--Seleccione Tipo--</option>
-                    <option>Ahorro</option>
-                    <option>Corriente</option>
-                </select>
+                <asp:DropDownList ID="DropDownList2" runat="server" >
+                    <asp:ListItem Value="1">Ahorro</asp:ListItem>
+                    <asp:ListItem Value="2">Corriente</asp:ListItem>
+                </asp:DropDownList>
 
             </div>
 
