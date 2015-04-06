@@ -180,7 +180,26 @@ body > section {
 
 #button2{
 
-    margin-left:90px;
+    margin-left:60px;
+    width:120px;
+    height:30px;
+
+    background-color:#0099FF;
+    color:white;
+
+    font-family:"Century Gothic";
+    font-size:15px;
+
+    border:0px;
+
+    cursor:hand;
+    cursor:pointer;
+
+}
+
+#button_Salir{
+
+    margin-left:60px;
     width:120px;
     height:30px;
 

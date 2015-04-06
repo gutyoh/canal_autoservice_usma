@@ -37,6 +37,10 @@
             
             <asp:Button ID="button2" Text="Ingresar" runat="server" OnClick="button2_Click"/>
                 
+            <br /><br />
+
+            <div>  <asp:Button ID="button_Salir" runat="server" OnClick="button_Salir_Click" Text="Salir" /> </div>
+                
         </form>
     </section>
 

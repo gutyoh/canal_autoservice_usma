@@ -10,6 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using acceso_datos;
+using System.Windows.Forms;
 
 namespace presentacion.asp.net
 {
@@ -58,6 +59,11 @@ namespace presentacion.asp.net
                 Session.Add("cedula", cedula);
                 Response.Redirect("opciones.aspx");
                 
+            }
+
+            else
+            {
+                   MessageBox.Show("El cliente no existe en el sistema.", "MENSAJE DE ALERTA");
             }
         }
     }

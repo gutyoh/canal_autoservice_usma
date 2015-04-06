@@ -52,5 +52,12 @@ namespace presentacion.asp.net
                 }
         
         }
+
+        protected void button_Salir_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("login.aspx", true);
+            
+        }
     }
 }

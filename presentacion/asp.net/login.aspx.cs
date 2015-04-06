@@ -10,6 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using acceso_datos;
+using System.Windows.Forms;
 
 namespace presentacion.asp.net
 {
@@ -84,6 +85,11 @@ namespace presentacion.asp.net
                     Response.Redirect("busqueda.aspx", true);
                 }
 
+                else if (tipo == "")
+                {
+                    MessageBox.Show("Usuario o contraseña incorrecto", "MENSAJE DE ALERTA");
+                }
+
                 //pError = cmd.Parameters["@pError"].Value.ToString();
                 //pNombre = cmd.Parameters["@pNombre"].Value.ToString();
                 //pMsg = cmd.Parameters["@pMsg"].Value.ToString();
@@ -93,7 +99,7 @@ namespace presentacion.asp.net
             }
             catch (Exception ex)
             {
-
+                
             }
 
         
