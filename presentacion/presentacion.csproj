@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -71,6 +72,7 @@
     <Content Include="asp.net\crear_cuentas.aspx" />
     <Content Include="asp.net\login.aspx" />
     <Content Include="asp.net\opciones.aspx" />
+    <Content Include="asp.net\Reportes.aspx" />
     <Content Include="css\styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -109,6 +111,13 @@
     </Compile>
     <Compile Include="asp.net\opciones.aspx.designer.cs">
       <DependentUpon>opciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp.net\Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp.net\Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 
 namespace presentacion.asp.net
@@ -21,6 +22,8 @@ namespace presentacion.asp.net
         private string cedula;
         private string id_cliente;
         private int temp;
+        private int cuenta_nueva;
+        private float balance_nuevo;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -42,19 +45,27 @@ namespace presentacion.asp.net
                                  "database=BANCODB; " +
                                  "connection timeout=30");
 
+    
+      
+
                 SqlCommand cmd = new SqlCommand("PA_CREAR_CUENTA", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@cuenta", SqlDbType.Int).Value = DropDownList1.SelectedValue;
-                cmd.Parameters.Add("@tipo", SqlDbType.Int).Value = DropDownList2.SelectedValue;
+                cmd.Parameters.Add("@cuenta", SqlDbType.Int).Value = Convert.ToInt32(DropDownList1.SelectedValue.ToString());
+                cmd.Parameters.Add("@tipo", SqlDbType.Int).Value = Convert.ToInt32(DropDownList2.SelectedValue.ToString());
                 cmd.Parameters.Add("@mensaje", SqlDbType.VarChar, 50).Direction = ParameterDirection.Output;
+                cmd.Parameters.Add("@cuenta_nueva", SqlDbType.Int).Direction = ParameterDirection.Output;
+                cmd.Parameters.Add("@balance_nuevo", SqlDbType.Float).Direction = ParameterDirection.Output;
                
-                try
+
+
+            try
                 {
                     con.Open();
                     cmd.ExecuteScalar();                    
                     mensaje = cmd.Parameters["@mensaje"].Value.ToString();
                     con.Close();
-                 }
+                 
+                }
                 catch (Exception ex)
                 {
 
@@ -62,10 +73,16 @@ namespace presentacion.asp.net
                 if (mensaje == "")
                 {
 
+                    Session.Add("nombre", nombre);
+                    Session.Add("cedula", cedula);
+                    Session.Add("cuenta_nueva", cuenta_nueva);
+                    Session.Add("balance_nuevo", balance_nuevo);
+                    Session.Add("tipo_cuenta", DropDownList2.SelectedItem.Text);
+
                 }
                 else
                 {
-                    
+                    MessageBox.Show(mensaje);
                 }
         }
     }
