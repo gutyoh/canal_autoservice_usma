@@ -1,0 +1,371 @@
+﻿/*
+    ESTE DOCUMENTO CONTIENE LOS ESTILOS PARA LAS 5 PLANTILLAS DEL CANAL AUTOSERVICE
+    PARA CONOCER LOS DETALLES DE CADA PAGINA SE HAN SEPARADO POR PEQUEÑOS COMENTARIOS 
+    CON UN ENCABEZADO "TAGS" Y UN "CIERRE" DENTRO CONTENDRA EL ESTILO PARA LA PLANTILLA
+    SEGUN EL NOMBRE INDICADO EN EL "TAG"   
+    
+*/
+
+
+/*---tags general----*/
+
+#header{
+
+    
+    width:100%;
+    height:120px;
+    min-width:1100px;
+
+    background-color:white;
+    position:absolute;
+    
+    top:0;
+    left:0;
+
+    border-style:solid;
+    
+    border-top-width:0px;
+    border-right-width:0px;
+    border-bottom-width:3px;
+    border-left-width:0px;
+
+    border-color:#004B5A;
+
+}
+
+#header_content{
+
+    
+
+    position:relative;
+    width:1100px;
+    min-width:1100px;
+    height:120px;
+    margin:0px auto 0px auto;
+
+}
+
+#header_content > img{
+
+    width:212px;
+    height:119px;
+
+}
+
+#menu_header{
+
+    position:absolute;
+    margin-left:848px;
+    margin-top:70px;
+           
+
+}
+
+#menu_header li{
+
+    border:1px solid;
+           
+    width:100px;
+    list-style:none;
+    text-align:center;
+
+    padding: 5px 5px;
+            
+    float:left;
+
+}
+
+body{
+
+    background-color:#9DD6FA;
+    font-family:"Century Gothic";
+
+}
+
+#copyright{
+
+    
+    width:100%;
+    min-width:1100px;
+    height:50px;
+    
+    background-color:#0099FF;
+    color:white;
+    text-align:center;
+    font-size:14px;
+
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+
+/*---cierra general----*/
+
+
+/*----tags login----*/
+body > section > form{
+
+   
+    position:relative;
+
+    width:300px;
+    height:160px;
+
+    margin:400px auto 0px auto;
+    padding:40px 40px;
+
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+
+    box-shadow:-2px -2px 7px 0px black;
+
+    background-color:white; 
+
+    -webkit-animation:opacidad 2s;
+}
+
+#button1{
+
+    margin-left:104px;
+    width:120px;
+    height:30px;
+
+    background-color:#0099FF;
+    color:white;
+
+    font-family:"Century Gothic";
+    font-size:15px;
+
+    border:0px;
+
+    cursor:hand;
+    cursor:pointer;
+
+}
+
+body > section {
+
+    
+    width:1100px;
+    min-width:1100px;
+    height:500px;
+
+
+    margin:150px auto 0px auto;
+ 
+}
+
+/*----cierre login----*/
+
+
+
+@-webkit-keyframes opacidad{
+
+    0% {opacity:0; }
+    100% {opacity:1; }
+
+}
+
+
+
+/* ----tags para busqueda----- */
+
+#text_in_form{
+
+    margin-left:60px;
+
+}
+
+#button2{
+
+    margin-left:60px;
+    width:120px;
+    height:30px;
+
+    background-color:#0099FF;
+    color:white;
+
+    font-family:"Century Gothic";
+    font-size:15px;
+
+    border:0px;
+
+    cursor:hand;
+    cursor:pointer;
+
+}
+
+#button_Salir{
+
+    margin-left:60px;
+    width:120px;
+    height:30px;
+
+    background-color:#0099FF;
+    color:white;
+
+    font-family:"Century Gothic";
+    font-size:15px;
+
+    border:0px;
+
+    cursor:hand;
+    cursor:pointer;
+
+}
+
+
+/*---- cierre busqueda ---*/
+
+
+/*---tag opciones---*/
+
+#caja_desplegable{
+
+    width: 195px;
+    height: 30px;
+
+    margin-left:50px;
+    font-size:15px;
+
+}
+
+/*--- cierre opciones---*/
+
+
+/*---tag consultas---*/
+
+#display_content{
+
+    width:1100px;
+    height:600px;
+    min-height:600px;
+    border:1px solid;
+
+    margin:250px auto 0px auto;
+
+    background-color:white;
+
+}
+
+
+/*---cierre consultas---*/
+
+/*---tag crear cuenta---*/
+
+#content_crear_cuenta{
+
+    width:900px;
+    height:300px;
+    min-height:300px;
+    border:1px solid;
+
+    margin:350px auto 0px auto;
+
+    background-color:white;
+
+}
+
+
+#label1{
+
+    border:1px solid;
+
+
+    margin:0px auto 0px auto;
+
+}
+
+#content_crear_cuenta > p{
+
+    margin:0px auto 0px auto;
+
+    width:500px;
+
+    border:1px solid;
+
+}
+
+.linea2{
+
+    display:inline;
+    float:left;
+
+}
+
+#content_line2{
+
+    margin:50px auto 50px auto;
+
+
+    width:700px;
+    height:100px;
+
+}
+
+#debitar1{
+
+    width:250px;
+    height:100px;
+
+    display:block;
+
+}
+
+#flecha1{
+
+    margin-left:75px;
+    margin-top:20px;
+
+}
+
+
+#tipo_cuenta1{
+
+    height:100px;
+
+    display:block;
+
+    margin-left:75px;
+
+}
+
+#cuenta_debitar1{
+
+    margin:0px 0px 0px 45px;
+
+
+
+}
+
+#seleccion_cuenta1{
+
+    margin:0px 0px 0px 45px;
+
+
+}
+
+
+#button5{
+
+    margin:20px 0px 0px 400px;
+
+    width:120px;
+    height:30px;
+
+    background-color:#0099FF;
+    color:white;
+
+    font-family:"Century Gothic";
+    font-size:15px;
+
+    border:0px;
+
+    cursor:hand;
+    cursor:pointer;
+
+}
+
+/*---cierre crear cuenta---*/

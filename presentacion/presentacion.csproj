@@ -59,6 +59,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="asp.net\Calendario.aspx" />
+    <Content Include="asp.net\pikaday.js" />
+    <Content Include="css\pikaday.css" />
+    <Content Include="css\site.css" />
+    <Content Include="css\theme.css" />
     <Content Include="DataSet.xsc">
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Content>
@@ -70,6 +75,8 @@
     <Content Include="DataSet.xss">
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Content>
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\TestSite01.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -85,6 +92,13 @@
     <Content Include="asp.net\opciones.aspx" />
     <Content Include="asp.net\Reportes.aspx" />
     <Content Include="css\styles.css" />
+    <None Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery.ui.core.js" />
+    <Content Include="Scripts\jquery.ui.core.min.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +108,13 @@
     </Compile>
     <Compile Include="asp.net\busqueda.aspx.designer.cs">
       <DependentUpon>busqueda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asp.net\Calendario.aspx.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asp.net\Calendario.aspx.designer.cs">
+      <DependentUpon>Calendario.aspx</DependentUpon>
     </Compile>
     <Compile Include="asp.net\consultas.aspx.cs">
       <DependentUpon>consultas.aspx</DependentUpon>
