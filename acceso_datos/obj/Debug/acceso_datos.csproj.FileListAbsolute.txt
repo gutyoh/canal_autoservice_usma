@@ -7,6 +7,5 @@ C:\Users\Hermann\Desktop\canal_autoservice_usma\acceso_datos\obj\Debug\acceso_da
 C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\acceso_datos\bin\acceso_datos.dll.config
 C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\acceso_datos\bin\acceso_datos.dll
 C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\acceso_datos\bin\acceso_datos.pdb
-C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\acceso_datos\obj\Debug\acceso_datos.csprojResolveAssemblyReference.cache
 C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\acceso_datos\obj\Debug\acceso_datos.dll
 C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\acceso_datos\obj\Debug\acceso_datos.pdb
