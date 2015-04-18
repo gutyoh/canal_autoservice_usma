@@ -23,7 +23,9 @@
                     <asp:RadioButton ID="RadioButton1" runat="server" GroupName="1" Text="Fecha" />
                 </td>
                 <td rowspan="5">
-                    <rsweb:ReportViewer ID="ReportViewer1" runat="server">
+                    <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
+                        <LocalReport ReportPath="asp.net\Report1.rdlc">
+                        </LocalReport>
                     </rsweb:ReportViewer>
                 </td>
             </tr>

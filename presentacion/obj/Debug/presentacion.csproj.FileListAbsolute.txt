@@ -12,3 +12,13 @@ C:\Users\Hermann\Desktop\canal_autoservice_usma\presentacion\obj\Debug\presentac
 C:\Users\Hermann\Desktop\canal_autoservice_usma\presentacion\obj\Debug\presentacion.pdb
 C:\Users\Hermann\Desktop\canal_autoservice_usma\presentacion\bin\acceso_datos.dll
 C:\Users\Hermann\Desktop\canal_autoservice_usma\presentacion\bin\acceso_datos.pdb
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\bin\presentacion.dll.config
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\bin\presentacion.dll
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\bin\presentacion.pdb
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\bin\acceso_datos.dll
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\bin\acceso_datos.pdb
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\obj\Debug\presentacion.csprojResolveAssemblyReference.cache
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\obj\Debug\presentacion.dll
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\obj\Debug\presentacion.pdb
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\obj\Debug\RdlCompile.cache
+C:\Users\Hermann\Documents\GitHub\canal_autoservice_usma\presentacion\obj\Debug\RdlCompile.compiled
